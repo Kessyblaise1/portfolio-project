@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONT CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS BROWSER RESETS -->
+    <link rel="stylesheet" href="./resets.css">
+
+    <!-- CUSTOM STYLE SHEET -->
+    <link rel="stylesheet" href="./style.css">
+
+    <title>portfolio project</title>
+</head>
+<body>
+    <header>
+        <div class="logo_brand">
+            <a href="index.html" class="logo">Angello</a>
+        </div>
+        
+        <nav>
+            <ul>
+                <li class="nav_links"><a href="index.html">Home</a></li>
+                <li class="nav_links"><a href="about.html">About</a></li>
+                <li class="nav_links"><a href="projects.html">Projects</a></li>
+                <li class="nav_links"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav_btn">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="projects_container container">
+            <div class="project">
+                <div class="project_image">
+                    <img src="./projects/Screenshot (15).png" alt="">
+                </div>
+                <div class="project_description">
+                    <h2 class="project_title">Home alone</h2>
+                    <p class="project_description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, alias. Doloremque neque, voluptates obcaecati itaque illum quidem ad eius delectus cumque recusandae sequi nobis aut quia iusto. Odit ipsam atque, ea laudantium officiis velit necessitatibus aut harum praesentium in quisquam omnis quo nobis culpa labore, eius explicabo et temporibus maiores?</p>
+                </div>
+                <p class="live_preview">
+                    view live
+                    <a href="#">preview</a>
+                </p>
+            </div>
+            <div class="project">
+                <div class="project_image">
+                    <img src="./projects/Screenshot (21).png" alt="">
+                </div>
+                <div class="project_description">
+                    <h2 class="project_title">Home alone</h2>
+                    <p class="project_description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, alias. Doloremque neque, voluptates obcaecati itaque illum quidem ad eius delectus cumque recusandae sequi nobis aut quia iusto. Odit ipsam atque, ea laudantium officiis velit necessitatibus aut harum praesentium in quisquam omnis quo nobis culpa labore, eius explicabo et temporibus maiores?</p>
+                </div>
+                <p class="live_preview">
+                    view live
+                    <a href="#">preview</a>
+                </p>
+            </div>
+            <div class="project">
+                <div class="project_image">
+                    <img src="./projects/Screenshot (23).png" alt="">
+                </div>
+                <div class="project_description">
+                    <h2 class="project_title">Home alone</h2>
+                    <p class="project_description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, alias. Doloremque neque, voluptates obcaecati itaque illum quidem ad eius delectus cumque recusandae sequi nobis aut quia iusto. Odit ipsam atque, ea laudantium officiis velit necessitatibus aut harum praesentium in quisquam omnis quo nobis culpa labore, eius explicabo et temporibus maiores?</p>
+                </div>
+                <p class="live_preview">
+                    view live
+                    <a href="#">preview</a>
+                </p>
+            </div>
+            <div class="project">
+                <div class="project_image">
+                    <img src="./projects/time tracking.png" alt="">
+                </div>
+                <div class="project_description">
+                    <h2 class="project_title">Home alone</h2>
+                    <p class="project_description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, alias. Doloremque neque, voluptates obcaecati itaque illum quidem ad eius delectus cumque recusandae sequi nobis aut quia iusto. Odit ipsam atque, ea laudantium officiis velit necessitatibus aut harum praesentium in quisquam omnis quo nobis culpa labore, eius explicabo et temporibus maiores?</p>
+                </div>
+                <p class="live_preview">
+                    view live
+                    <a href="#">preview</a>
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script>
+        $(".nav_btn").click(function(){
+            $("nav").slideToggle(300)
+        })
+    </script>
+</body>
+</html>

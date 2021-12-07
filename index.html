@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONT CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS BROWSER RESETS -->
+    <link rel="stylesheet" href="./resets.css">
+
+    <!-- CUSTOM STYLE SHEET -->
+    <link rel="stylesheet" href="./style.css">
+
+    <title>portfolio project</title>
+</head>
+<body>
+    <header>
+        <div class="logo_brand">
+            <a href="index.html" class="logo">Angello</a>
+        </div>
+        
+        <nav>
+            <ul>
+                <li class="nav_links"><a href="index.html">Home</a></li>
+                <li class="nav_links"><a href="about.html">About</a></li>
+                <li class="nav_links"><a href="projects.html">Projects</a></li>
+                <li class="nav_links"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav_btn">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="left_column">
+                <div class="profile_img">
+                    <img src="./cesar.jpg" alt="my profile image">
+                </div>
+                <h2 class="section_heading">Michael Angello</h2>
+            </section>
+
+            <section class="center_column">
+                <h2 class="section_heading">About Me</h2>
+
+                <p class="about_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla nobis explicabo minima alias ab pariatur nihil possimus eius quasi at voluptatibus odio dolores cupiditate eligendi quia porro aspernatur illum, omnis laboriosam. Provident ratione hic similique inventore magni rem corrupti doloremque, maxime molestias sint dolorum nisi. Error est, non tempore sed quis inventore maxime, consequatur aliquid laborum eligendi ducimus atque harum?</p>
+            </section>
+
+            <section class="right_column">
+                <div class="hobbies">
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li class="hobby">Bunjee Jumping</li>
+                        <li class="hobby">Rock Climbing</li>
+                        <li class="hobby">Mountain Skiing</li>
+                        <li class="hobby">Paint Ball War</li>
+                        <li class="hobby">Mountain Biking</li>
+                    </ul>
+                </div>
+
+                <div class="entertainments">
+                    <h3>Favourite Entertainments</h3>
+                    <ul>
+                        <li class="entertainment">Tv Shows</li>
+                        <li class="entertainment">Video Games</li>
+                        <li class="entertainment">Books</li>
+                        <li class="entertainment">Movies</li>
+                        <li class="entertainment">Football</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script>
+        $(".nav_btn").click(function(){
+            $("nav").slideToggle(300)
+        })
+    </script>
+</body>
+</html>

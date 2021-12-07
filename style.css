@@ -1,0 +1,262 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+    color: #6f6f71;
+    font-size: 14px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.nav_btn{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar{
+    width: 20px;
+    height: 3px;
+    background-color: #6f6f71;
+    margin: 2px 0;
+}
+
+nav{
+    display: none;
+}
+
+nav ul{
+    display: flex;
+}
+
+.nav_links{
+    margin: 0 15px
+}
+
+.nav_links a{
+    color: #6f6f71;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.container{
+    width: 90%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: none;
+    align-content: center;
+}
+
+
+/* LEFT COLUMN */
+
+.left_column,
+.profile_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left_column{
+    flex-direction: column;
+    text-align: center;
+}
+
+.profile_img{
+    margin-bottom: 1rem;
+}
+
+.profile_img img{
+    width: 300px;
+    height: 300px;
+}
+
+
+/* CENTER COLUMN */
+.section_heading{
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.about_text{
+    line-height: 25px;
+}
+
+
+/* RIGHT COLUMN */
+.right_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1.5rem
+}
+
+.right_column ul li{
+    font-size: 16px;
+}
+
+
+/* MEDIA QUERIES  =========== TABLET VIEW======== */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .right_column{
+        flex-direction: row;
+        margin: 0;
+        grid-column: 1 / 4;
+        justify-content: space-evenly;
+    }
+}
+
+/* MEDIA QUERIES  =========== DESKTOP VIEW======== */
+@media screen and (min-width: 1024px) {
+    .container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    nav{
+        display: block;
+    }
+
+    .nav_btn{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    nav{
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #f0f0f0;
+        border-bottom: 1px solid #e6e6e6;
+        padding: 10px 20px;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    nav ul li{
+        padding: 10px 0;
+    }
+
+    .hobbies{
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+
+
+
+
+/* PROJECTS PAGE STYLING */
+.projects_container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.project{
+    width: 350px;
+    height: max-content;
+    flex: 1 1 350px;
+    margin: 1rem;
+    padding: 0 10px 10px 10px;
+    box-shadow: -1px 10px 8px -5px rgba(0,0,0,0.45);
+    -webkit-box-shadow: -1px 10px 8px -5px rgba(0,0,0,0.45);
+    -moz-box-shadow: -1px 10px 8px -5px rgba(0,0,0,0.45);
+    border-radius: 15px;
+}
+
+.project_title{
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.live_preview{
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+
+/* ABOUT PAGE STYLING */
+.about_container{
+    display: grid;
+    grid-template-columns: none;
+    margin-bottom: 1.5rem;
+}
+
+.about_about_text p{
+    padding: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+    .about_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+/* CONTACT PAGE STYLING */
+.contact.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_form{
+    display: grid;
+    grid-template-columns: none;
+    width: 90%;
+    max-width: 700px;
+    border: 1px solid #6f6f71;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.newsl__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: left;
+    padding-left: .5rem;
+}
+
+.contact_form input{
+    padding: 7px 5px;
+    border: none;
+    border-bottom: 1px solid #e6e6e6;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    .contact_form{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
