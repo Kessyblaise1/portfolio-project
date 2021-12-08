@@ -15,6 +15,16 @@ header{
     border-bottom: 1px solid #e6e6e6;
 }
 
+.navigation input{
+    display: none;
+}
+
+.navigation input:checked ~ nav{
+    height: max-content;
+    opacity: 1;
+    visibility: visible;
+}
+
 .nav_btn{
     width: max-content;
     display: flex;
@@ -31,7 +41,10 @@ header{
 }
 
 nav{
-    display: none;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease;
 }
 
 nav ul{
@@ -124,6 +137,16 @@ main{
         grid-column: 1 / 4;
         justify-content: space-evenly;
     }
+
+    nav{
+        visibility: visible;
+        height: max-content;
+        opacity: 1;
+    }
+
+    .nav_btn{
+        display: none;
+    }
 }
 
 /* MEDIA QUERIES  =========== DESKTOP VIEW======== */
@@ -133,7 +156,9 @@ main{
     }
 
     nav{
-        display: block;
+        visibility: visible;
+        height: max-content;
+        opacity: 1;
     }
 
     .nav_btn{
@@ -253,6 +278,14 @@ main{
     border-bottom: 1px solid #e6e6e6;
     margin: 5px 0;
     border-radius: 4px;
+}
+
+.contact_form button{
+    padding: 7px 15px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 4px;
+    width: 90%;
 }
 
 @media screen and (min-width: 768px) {

@@ -23,20 +23,25 @@
         <div class="logo_brand">
             <a href="index.html" class="logo">Angello</a>
         </div>
-        
-        <nav>
-            <ul>
-                <li class="nav_links"><a href="index.html">Home</a></li>
-                <li class="nav_links"><a href="about.html">About</a></li>
-                <li class="nav_links"><a href="projects.html">Projects</a></li>
-                <li class="nav_links"><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
 
-        <div class="nav_btn">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+        <div class="navigation">
+            <input type="checkbox" name="nav_check" id="nav_check">
+            <label for="nav_check">
+                <div class="nav_btn">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </label>
+
+            <nav>
+                <ul>
+                    <li class="nav_links"><a href="index.html">Home</a></li>
+                    <li class="nav_links"><a href="about.html">About</a></li>
+                    <li class="nav_links"><a href="projects.html">Projects</a></li>
+                    <li class="nav_links"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -54,12 +59,5 @@
         </div>
 
     </main>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
-    <script>
-        $(".nav_btn").click(function(){
-            $("nav").slideToggle(300)
-        })
-    </script>
 </body>
 </html>
